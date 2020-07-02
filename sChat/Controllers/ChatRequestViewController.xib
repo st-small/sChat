@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatRequestViewController" customModule="sChat" customModuleProvider="target">
+            <connections>
+                <outlet property="aboutMeLabel" destination="69O-qA-eko" id="hhO-28-nZa"/>
+                <outlet property="acceptButton" destination="sPB-1Q-9pW" id="HaI-6k-nMI"/>
+                <outlet property="denyButton" destination="2ae-tA-BEU" id="N3G-qh-oKG"/>
+                <outlet property="imageView" destination="iwy-Wb-LDW" id="44l-rz-mvd"/>
+                <outlet property="nameLabel" destination="6pf-TO-Qsl" id="5lS-OX-Adf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="human6" translatesAutoresizingMaskIntoConstraints="NO" id="iwy-Wb-LDW">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFj-P0-vvX">
+                    <rect key="frame" x="0.0" y="690" width="414" height="206"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pf-TO-Qsl">
+                            <rect key="frame" x="24" y="35" width="366" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have the opportunity to chat with the best man in the world!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69O-qA-eko">
+                            <rect key="frame" x="24" y="67" width="366" height="38.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="StM-Z9-EjS">
+                            <rect key="frame" x="24" y="113.5" width="366" height="56"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPB-1Q-9pW">
+                                    <rect key="frame" x="0.0" y="0.0" width="179.5" height="56"/>
+                                    <state key="normal" title="ACCEPT"/>
+                                    <connections>
+                                        <action selector="acceptButtonTapped" destination="-1" eventType="touchUpInside" id="5kw-1X-6ck"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ae-tA-BEU">
+                                    <rect key="frame" x="186.5" y="0.0" width="179.5" height="56"/>
+                                    <state key="normal" title="Deny"/>
+                                    <connections>
+                                        <action selector="denyButtonTapped" destination="-1" eventType="touchUpInside" id="vOp-GF-3Lk"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="EXy-7u-LJk"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="69O-qA-eko" secondAttribute="trailing" constant="24" id="0Fs-Co-BsB"/>
+                        <constraint firstItem="StM-Z9-EjS" firstAttribute="top" secondItem="69O-qA-eko" secondAttribute="bottom" constant="8" id="3g0-eE-iug"/>
+                        <constraint firstItem="69O-qA-eko" firstAttribute="leading" secondItem="DFj-P0-vvX" secondAttribute="leading" constant="24" id="V0A-lA-9gK"/>
+                        <constraint firstAttribute="height" constant="206" id="Vwi-co-fbB"/>
+                        <constraint firstItem="6pf-TO-Qsl" firstAttribute="top" secondItem="DFj-P0-vvX" secondAttribute="top" constant="35" id="aMc-NP-ZQH"/>
+                        <constraint firstAttribute="trailing" secondItem="6pf-TO-Qsl" secondAttribute="trailing" constant="24" id="fVc-S4-fja"/>
+                        <constraint firstItem="6pf-TO-Qsl" firstAttribute="leading" secondItem="DFj-P0-vvX" secondAttribute="leading" constant="24" id="ja5-yQ-G9e"/>
+                        <constraint firstItem="StM-Z9-EjS" firstAttribute="leading" secondItem="DFj-P0-vvX" secondAttribute="leading" constant="24" id="l8H-w7-cNj"/>
+                        <constraint firstAttribute="trailing" secondItem="StM-Z9-EjS" secondAttribute="trailing" constant="24" id="uNB-LJ-oXF"/>
+                        <constraint firstItem="69O-qA-eko" firstAttribute="top" secondItem="6pf-TO-Qsl" secondAttribute="bottom" constant="8" id="v6g-1o-U6i"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iwy-Wb-LDW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1BI-pS-r1p"/>
+                <constraint firstItem="DFj-P0-vvX" firstAttribute="top" secondItem="iwy-Wb-LDW" secondAttribute="bottom" constant="-30" id="1Kx-Hh-kL0"/>
+                <constraint firstAttribute="bottom" secondItem="DFj-P0-vvX" secondAttribute="bottom" id="5Ol-pd-GyC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iwy-Wb-LDW" secondAttribute="trailing" id="JDV-aY-cdz"/>
+                <constraint firstItem="DFj-P0-vvX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JtJ-mz-nI1"/>
+                <constraint firstItem="iwy-Wb-LDW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="o60-Wf-3fu"/>
+                <constraint firstItem="DFj-P0-vvX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vTD-jm-DHV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="human6" width="3648" height="3648"/>
+    </resources>
+</document>

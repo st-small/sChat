@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetupProfileViewController" customModule="sChat" customModuleProvider="target">
+            <connections>
+                <outlet property="aboutMeTextField" destination="Gxs-dL-FoD" id="Sfq-ls-PoA"/>
+                <outlet property="avatarImage" destination="XcN-pp-we3" id="Pv7-aw-c9t"/>
+                <outlet property="fullNameTextField" destination="r0B-cU-06Z" id="958-Yg-9QR"/>
+                <outlet property="goToChatsButton" destination="q9R-lx-w53" id="2oh-V8-7Ll"/>
+                <outlet property="sexSegmentedControl" destination="GLC-AD-pe1" id="vJy-Hz-zEg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up profile!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsm-iC-N6B">
+                    <rect key="frame" x="125" y="160" width="164" height="36"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="QSA-rI-yaK">
+                    <rect key="frame" x="40" y="376" width="334" height="424.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KBi-xK-jeC">
+                            <rect key="frame" x="0.0" y="0.0" width="334" height="55.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GA-4d-vIc">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="27.5"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0B-cU-06Z" customClass="OneLineTextField" customModule="sChat" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="27.5" width="334" height="28"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J6o-sN-MOI">
+                            <rect key="frame" x="0.0" y="116.5" width="334" height="55.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAL-UE-Djy">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="27.5"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gxs-dL-FoD" customClass="OneLineTextField" customModule="sChat" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="27.5" width="334" height="28"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="FZT-cj-IQ4">
+                            <rect key="frame" x="0.0" y="233" width="334" height="70.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRe-9n-lC0">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="27.5"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GLC-AD-pe1">
+                                    <rect key="frame" x="0.0" y="39.5" width="334" height="32"/>
+                                    <segments>
+                                        <segment title="Male"/>
+                                        <segment title="Female"/>
+                                    </segments>
+                                </segmentedControl>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9R-lx-w53">
+                            <rect key="frame" x="0.0" y="364.5" width="334" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="lQ3-3k-rDC"/>
+                            </constraints>
+                            <state key="normal" title="Go to chats!"/>
+                            <connections>
+                                <action selector="goToChatsButtonTapped" destination="-1" eventType="touchUpInside" id="bZL-eW-gc7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="XcN-pp-we3">
+                    <rect key="frame" x="157" y="236" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="SWs-1v-m7U"/>
+                        <constraint firstAttribute="height" constant="100" id="a1w-cO-Ff8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="wsm-iC-N6B" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Lsl-Np-U4p"/>
+                <constraint firstItem="XcN-pp-we3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bIn-2H-lWh"/>
+                <constraint firstItem="XcN-pp-we3" firstAttribute="top" secondItem="wsm-iC-N6B" secondAttribute="bottom" constant="40" id="eVy-XW-zLz"/>
+                <constraint firstItem="QSA-rI-yaK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="ghi-PJ-SFm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QSA-rI-yaK" secondAttribute="trailing" constant="40" id="l9i-oR-uwi"/>
+                <constraint firstItem="wsm-iC-N6B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="160" id="nHE-Ie-8gf"/>
+                <constraint firstItem="QSA-rI-yaK" firstAttribute="top" secondItem="XcN-pp-we3" secondAttribute="bottom" constant="40" id="uz6-6z-MGk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="hGh-eY-w2g" appends="YES" id="hjA-JW-e60"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="131"/>
+        </view>
+        <tapGestureRecognizer id="hGh-eY-w2g">
+            <connections>
+                <action selector="avatarTapped" destination="-1" id="ehx-0l-AGG"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="avatar" width="74" height="86"/>
+    </resources>
+</document>

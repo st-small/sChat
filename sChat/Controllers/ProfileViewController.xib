@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="sChat" customModuleProvider="target">
+            <connections>
+                <outlet property="aboutMeLabel" destination="0F7-sq-aHy" id="38d-Im-04Q"/>
+                <outlet property="imageView" destination="rUw-pP-Azl" id="gi6-zC-u6Z"/>
+                <outlet property="nameLabel" destination="Iv4-JF-7ak" id="xH1-r2-4od"/>
+                <outlet property="textField" destination="Yrt-JP-axx" id="ldH-eS-jsl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="human6" translatesAutoresizingMaskIntoConstraints="NO" id="rUw-pP-Azl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iu2-Yu-f87">
+                    <rect key="frame" x="0.0" y="690" width="414" height="206"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iv4-JF-7ak">
+                            <rect key="frame" x="24" y="35" width="366" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have the opportunity to chat with the best man in the world!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F7-sq-aHy">
+                            <rect key="frame" x="24" y="67" width="366" height="38.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yrt-JP-axx" customClass="InsertableTextField" customModule="sChat" customModuleProvider="target">
+                            <rect key="frame" x="24" y="113.5" width="366" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="xu3-a8-yEH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Iv4-JF-7ak" secondAttribute="trailing" constant="24" id="9kS-8I-N27"/>
+                        <constraint firstItem="Iv4-JF-7ak" firstAttribute="top" secondItem="iu2-Yu-f87" secondAttribute="top" constant="35" id="JTx-FY-REr"/>
+                        <constraint firstItem="Iv4-JF-7ak" firstAttribute="leading" secondItem="iu2-Yu-f87" secondAttribute="leading" constant="24" id="Nph-Qu-FL9"/>
+                        <constraint firstAttribute="trailing" secondItem="0F7-sq-aHy" secondAttribute="trailing" constant="24" id="Vtu-bo-bor"/>
+                        <constraint firstItem="0F7-sq-aHy" firstAttribute="leading" secondItem="iu2-Yu-f87" secondAttribute="leading" constant="24" id="ceh-1U-dTB"/>
+                        <constraint firstAttribute="height" constant="206" id="ib3-Lr-cXb"/>
+                        <constraint firstItem="Yrt-JP-axx" firstAttribute="leading" secondItem="iu2-Yu-f87" secondAttribute="leading" constant="24" id="lEm-qv-5ZX"/>
+                        <constraint firstItem="Yrt-JP-axx" firstAttribute="top" secondItem="0F7-sq-aHy" secondAttribute="bottom" constant="8" id="q8I-St-aIa"/>
+                        <constraint firstItem="0F7-sq-aHy" firstAttribute="top" secondItem="Iv4-JF-7ak" secondAttribute="bottom" constant="8" id="wna-Gf-7B6"/>
+                        <constraint firstAttribute="trailing" secondItem="Yrt-JP-axx" secondAttribute="trailing" constant="24" id="yqz-dQ-YXk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iu2-Yu-f87" firstAttribute="top" secondItem="rUw-pP-Azl" secondAttribute="bottom" constant="-30" id="0zg-FH-Uqi"/>
+                <constraint firstItem="rUw-pP-Azl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Fc4-yd-tl3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rUw-pP-Azl" secondAttribute="trailing" id="JfB-fk-EsQ"/>
+                <constraint firstAttribute="bottom" secondItem="iu2-Yu-f87" secondAttribute="bottom" id="NZM-be-2Ds"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iu2-Yu-f87" secondAttribute="trailing" id="aED-mY-rr8"/>
+                <constraint firstItem="iu2-Yu-f87" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kB1-um-VHM"/>
+                <constraint firstItem="rUw-pP-Azl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yO0-fP-p5O"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="human6" width="3648" height="3648"/>
+    </resources>
+</document>
